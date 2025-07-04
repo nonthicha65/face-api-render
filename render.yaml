@@ -1,6 +1,7 @@
 services:
   - type: web
-    name: face-verify-api
+    name: face-api-render
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: ""
     startCommand: gunicorn main:app
+    runtime: python
